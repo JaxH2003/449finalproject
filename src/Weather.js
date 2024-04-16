@@ -47,13 +47,13 @@ function Weather() {
     return <p class="text-3xl font-bold mb-4">Loading weather data...</p>;
   }
 
-  return (
-    <div>
-      <h1 class="text-3xl font-bold mb-4 text-center">Weather Forecast (Every 12 Hours)</h1>
-      <ul class="text-2xl mb-4 ml-36 mt-12">
+   return (
+      <div>
+        <h2 class="text-2xl font-bold mb-4 text-center">Weather Forecast (Every 12 Hours)</h2>
+        <ul class="text-2xl mb-4 ml-36 mt-12 font-bold">
         {weather.map((item, index) => (
-          <li key={index}>{`${new Date(item.date).toLocaleTimeString()} - Temperature: ${item.temperature}°C`}</li>
-        ))}
+         <li key={index}>{`${new Date(item.date).toLocaleString()} - Temperature: ${item.temperature}°C`}</li>
+       ))}
       </ul>
     </div>
   );
@@ -61,3 +61,5 @@ function Weather() {
 
 export default Weather;
 
+//chatgbt assisted with this code becuase I couldnt get alpine to work and didnt know how to make the weather show for every 12 hours instead of every hour
+//also assisted in making the dates appear becasue i kept getting invalid date errors on my page/ mainly the cashed weather, .map, and interval
