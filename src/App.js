@@ -11,17 +11,15 @@ function App() {
   return (
     <body class='bg-blue-300 h-screen'>
       <h1 class="text-3xl font-bold mb-4 text-center">Weather for East Lansing Michigan</h1>
-      <Weather />
-      <div class="flex justify-end items-center h-screen">
-      <div class="w-1/2">
-    <table class="border-collapse border border-gray-200 mb-120 text-bold" id="averages">
-      
-    </table>
-  </div>
-</div>
-
-      
-    <script type="module" src="supabase.js"></script>
+      <div class="flex">
+        <div>
+          <Weather />
+        </div>
+        <table class="border-collapse border border-gray ml-8 text-bold" id="averages">
+          {/* Table content */}
+        </table>
+      </div>
+      <script type="module" src="supabase.js"></script>
     </body>
   );
 }
