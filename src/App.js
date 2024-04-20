@@ -17,8 +17,8 @@ function App() {
           <Weather />
         </div>
         <div class=" ">
-        <table class="border border-black mt-32 mr-20 text-lg w-full h-auto" id="averages">
-        </table>
+          <table class="border border-black mt-32 mr-20 text-lg w-full h-auto text-center py-8 px-4" id="averages">
+          </table>
         </div>
       </div>
       <script type="module" src="supabase.js"></script>
