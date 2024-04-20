@@ -17,7 +17,7 @@ function App() {
           <Weather />
         </div>
         <div class=" ">
-        <table class="border border-grey-300 shadow-lg mt-32 mr-20" id="averages">
+        <table class="border border-black mt-32 mr-20 text-lg w-full h-auto" id="averages">
         </table>
         </div>
       </div>
