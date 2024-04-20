@@ -9,15 +9,17 @@ const supabase = createClient(supabaseUrl, supabaseKey)
 
 function App() {
   return (
-    <body class='bg-blue-300 h-screen'>
+    <body class='bg-blue-300 min-h-screen'>
       <h1 class="text-3xl font-bold mb-4 text-center">Weather for East Lansing Michigan</h1>
-      <div class="flex">
+  
+      <div class="h-screen flex justify-center space-x-4">
         <div>
           <Weather />
         </div>
-        <table class="border-collapse border border-gray ml-8 text-bold" id="averages">
-          {/* Table content */}
+        <div class=" ">
+        <table class="border border-grey-300 shadow-lg mt-32 mr-20" id="averages">
         </table>
+        </div>
       </div>
       <script type="module" src="supabase.js"></script>
     </body>

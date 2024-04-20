@@ -49,8 +49,8 @@ function Weather() {
 
    return (
     <div>
-        <h2 class="text-2x1 font-bold mb-4 ml-52">Weather Forecast (Every 12 Hours)</h2>
-        <ul class="w-1/2 text-2xl mb-4 ml-36 mt-12">
+        <h2 class="text-3x1 font-bold mb-4 ml-36 mt-12">Weather Forecast (Every 12 Hours) + The Average Temperatures from 4/22-4/28</h2>
+        <ul class="w-1/2 text-sm mb-4 ml-36 mt-12">
         {weather.map((item, index) => (
          <li key={index}>{`${new Date(item.date).toLocaleString()} - Temperature: ${item.temperature}°C`}</li>
        ))}
