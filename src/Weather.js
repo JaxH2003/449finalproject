@@ -49,7 +49,7 @@ function Weather() {
 
    return (
     <div class="text-center">
-        <h2 class="text-3x1 font-bold mb-4 ml-60 mt-12">Weather Forecast (Every 12 Hours) + Historical Average Temperatures from 4/22-4/28</h2>
+        <h2 class="text-3x1 font-bold mb-4 ml-48 mt-12">Weather Forecast (Every 12 Hours) + Historical Average Temperatures from 4/22-4/28</h2>
         <ul class="w-1/2 mb-4 ml-36 mt-12 border border-black">
         {weather.map((item, index) => (
          <li key={index} class="px-4 py-2">{`${new Date(item.date).toLocaleString()} - Temperature: ${item.temperature}°C`}</li>
@@ -63,4 +63,4 @@ function Weather() {
 export default Weather;
 
 //chatgbt assisted with this code becuase I couldnt get alpine to work and didnt know how to make the weather show for every 12 hours instead of every hour
-//also assisted in making the dates appear becasue i kept getting invalid date errors on my page/ mainly the cashed weather, .map, and interval
+//also assisted in making the dates appear becasue i kept getting invalid date errors on my page/ mainly the cashed weather, .map, and interval, basically took the code I had and imported it into chatgbt and asked it to help fix it so it would work as I was stuck for awhile.
