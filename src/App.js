@@ -11,13 +11,10 @@ function App() {
   return (
     <body class='bg-blue-300 min-h-screen'>
       <h1 class="text-3xl font-bold mb-4 text-center">Weather for East Lansing Michigan</h1>
-  
-      <div class="h-screen flex justify-center space-x-4">
-        <div>
-          <Weather />
-        </div>
-        <div class="">
-          <table class="border border-black mt-32 text-lg w-full h-auto text-center py-8 px-4 mr-20" id="averages">
+      <div class="mx-auto px-4 flex justify-center items-start">
+        <Weather />
+        <div class="ml-8">
+          <table class="border border-black text-lg w-full h-auto text-center py-4 px-8 mt-40 pr-80" id="averages">
           </table>
         </div>
       </div>
